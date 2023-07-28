@@ -83,10 +83,11 @@ void main()
 {
     printf("----------------------- User Input ----------------------------- \n");
     
-    // printf("Enter the name : ");
+    // // Limitations of 'scanf()' function
+    // printf("Enter Your full name : ");
     // char name[20];
     // scanf("%s", &name);
-    // printf("\nThe name is : %s", name);
+    // printf("\nThe name is : %s \n", name);
 
     // Getting the necessary input from the user
     printf("Enter the full name : ");

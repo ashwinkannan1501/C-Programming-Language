@@ -10,24 +10,23 @@ The constants is 'read-only' variable.
     The constants can be defined in 2 ways. They are :-
         (i) Using '#define' pre-processor directives
         (ii) Using a 'const' keyword.
+
+    (i) Using '#define' pre-processor directives :-
+    -------------------------------------------------
+        This pre-processor directive is used to declare an alias name for existing variable (or) any value.
+
+    SYNTAX :-
+    -----------
+        --------------------------
+        | #define variable value |
+        --------------------------
+
+        This should come in pre-processor section. No semi-colon(;) should be placed at the end of pre-proessor 
+    directives section.
 */
+
 #include <stdio.h>
-
-/*
-(i) Using '#define' pre-processor directives :-
--------------------------------------------------
-    This pre-processor directive is used to declare an alias name for existing variable (or) any value.
-
-SYNTAX :-
------------
-    --------------------------
-    | #define variable value |
-    --------------------------
-
-    This should come in pre-processor section. No semi-colon(;) should be placed at the end of pre-proessor 
-directives section.
-*/
-#define a 5.50 // Example 
+#define CONSTANT_VARIABLE 5.5056 // Example 
 
 void main()
 {
@@ -49,20 +48,20 @@ void main()
     characters. It is not required, but useful for code readability.
     */
    
-    const float pi = 3.1415; // Exmaple
-    const float e = 1.602;
-    const float electron_mass = 9.109;
-    const float proton_mass = 1.672;
-    const float neutron_mass = 1.674;
-    const float faraday_constant = 9.265;
+    const float PI = 3.1415; // Exmaple
+    const float E = 1.602;
+    const float ELECTRON_MASS = 9.109;
+    const float PROTON_MASS = 1.672;
+    const float NEUTRON_MASS = 1.674;
+    const float FARADAY_CONSTANT = 9.265;
 
-    printf("PI value = %.4f \n", pi);
-    printf("e value = %.4f \n", e);
-    printf("Electron Mass value = %.4f \n", electron_mass);
-    printf("Proton Mass value = %.4f \n", proton_mass);
-    printf("Neutron Mass value = %.4f \n", neutron_mass);
-    printf("Faraday Constant value = %.4f \n", faraday_constant);
-    printf("A = %.2f \n", a);
+    printf("PI value = %.4f \n", PI);
+    printf("e value = %.4f \n", E);
+    printf("Electron Mass value = %.4f \n", ELECTRON_MASS);
+    printf("Proton Mass value = %.4f \n", PROTON_MASS);
+    printf("Neutron Mass value = %.4f \n", NEUTRON_MASS);
+    printf("Faraday Constant value = %.4f \n", FARADAY_CONSTANT);
+    printf("Constant Variable = %.4f \n", CONSTANT_VARIABLE);
 
 
 

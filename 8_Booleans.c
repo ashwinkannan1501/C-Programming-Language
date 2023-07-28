@@ -1,7 +1,7 @@
 /*
 Booleans :-
 --------------
-    Very often i programming, you will need a datatype that can only have one of these 2 values like
+    Very often in programming, you will need a datatype that can only have one of these 2 values like
         (A) YES / NO
         (B) ON / OFF
         (C) TRUE / FALSE
@@ -38,18 +38,19 @@ void main()
     // Real Word example
     printf("----------------- Real World Example -------------------- \n");
     // Check if the person is eligible to vote or not
-    short age, salute;
+    short age, gender;
     char name[20];
-    printf("Enter 1 -> Male. \n Enter 2 -> Female\n Choose :- ");
-    scanf("%hd", &salute);
 
     printf("Enter your name : ");
-    scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
 
-    switch (salute)
+    printf("Enter 1 -> Male. \n Enter 2 -> Female\n Choose :- ");
+    scanf("%hd", &gender);
+
+    switch (gender)
     {
     case 1:
-        printf("Enter your age Mr.%s : ");
+        printf("Enter your age Mr.%s : ", name);
         scanf("%hd", &age);
         if (age >= 18)
         {
@@ -62,7 +63,7 @@ void main()
         break;
 
     case 2:
-        printf("Enter your age Ms/Mrs.%s : ");
+        printf("Enter your age Ms/Mrs.%s : ", name);
         scanf("%hd", &age);
         if (age >= 18)
         {
@@ -73,5 +74,9 @@ void main()
             printf("Since Your age is below 18. You are not able to vote Ms/Mrs.%s", name);
         }
         break;
+    
+    default:
+        printf("Incorrect Option. Please Choose either '1' or '2'");
     }
+    
 }

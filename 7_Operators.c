@@ -1,7 +1,7 @@
 /*
 Operators :-
 ---------------
-    The Operators are used to perform operqations on variables and values. 
+    The Operators are used to perform operations on variables and values. 
 
 Types :-
 ----------
@@ -11,7 +11,7 @@ Types :-
         (iii) Logical / Boolean Operator
         (iv) Bitwise Operators
         (v) Assignemnt Operators
-        (vi) Special / Misxcellaneous Operators
+        (vi) Special / Miscellaneous Operators
 */
 #include <stdio.h>
 void main()
@@ -35,7 +35,7 @@ void main()
         (B) '-' -> Subtraction -> This operator is used to subtract the 2 numbers.
         (C) '*' => Multiplication ->  This operator is used to multiply the 2 numbers.
         (D) '/' => Division -> This Operator is used to divide the 2 numbers.
-        (E) '%' => Modulud => This Operator is used to the remainder calaulation for 2 numbers.
+        (E) '%' => Modulus => This Operator is used to the remainder calaulation for 2 numbers.
         (F) ++ => Increment => This operator is used to do the +1 incrementation of 2 numbers. It is of 2 types :-
             (a) Pre-Inrement -> 'printf("%d", ++variable)' -> This pre-increment operator is used to perform the +1 
                 addition operation before printing the variable 
@@ -55,16 +55,16 @@ void main()
     short multiplicaton = first_number * second_number;
     short division = first_number / second_number;
     short modulus = first_number % second_number;
-    short pre_increment = ++first_number;
-    short post_increment = first_number ++;
-    short pre_decrement = --second_number;
-    short post_decrement = second_number--;
-
     printf("%hd + %hd = %hd \n", first_number, second_number, addition);
     printf("%hd - %hd = %hd \n", first_number, second_number, subtraction);
     printf("%hd * %hd = %hd \n", first_number, second_number, multiplicaton);
     printf("%hd / %hd = %hd \n", first_number, second_number, division);
-    printf("%hd \% %hd = %hd \n", first_number, second_number, modulus);
+    printf("%hd %% %hd = %hd \n", first_number, second_number, modulus);
+
+    short pre_increment = ++first_number;
+    short post_increment = first_number ++;
+    short pre_decrement = --second_number;
+    short post_decrement = second_number--;
     printf("++%hd = %hd \n", first_number, pre_increment);
     printf("%hd++ = %hd \n", first_number, post_increment);
     printf("--%hd = %hd \n", second_number, pre_decrement);

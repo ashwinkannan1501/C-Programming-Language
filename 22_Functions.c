@@ -60,7 +60,9 @@ void main()
 {
     printf("-------------- Functions --------------- \n");
 
-    short first_number, second_number, addition_result, multiplication_result, division_result;
+    short first_number, second_number, addition_result, multiplication_result;
+    float division_result;
+    
     printf("Enter the First Number :- ");
     scanf("%hd", &first_number);
     

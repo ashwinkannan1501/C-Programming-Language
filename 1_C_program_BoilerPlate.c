@@ -15,7 +15,7 @@
 
 #include<stdio.h> // Pre-processor Section
 
-#define pi 3.14 // Definition Section - It is a constant
+#define pi 3.14 // Definition Section - It is a constant variable
 float area, radius; // Global Declaration/variable - It can be accessed anywhere in the program.
 void addition(); // We want to declare the sub-function here if we want to define below the main function
 

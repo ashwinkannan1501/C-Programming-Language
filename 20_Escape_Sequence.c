@@ -32,12 +32,12 @@ void main()
     printf("Hi\nHello\nHow are you\n\n");
 
     // 4) '\r' - Carraiage Returns - It will put the cursor at the begining of the and it will overwrite it.
-    printf("This is AshwinKannan \rThis is Ishani Saravanan \n");
+    printf("This is AshwinKannan \rThis is  Kannan \n");
 
-    printf("This is Ashwin Kannan \t This is Ishani Saravanan \n"); // 5) '\t' - Horizontal Tab Space 
+    printf("This is Ashwin Kannan \t This is Kannan \n"); // 5) '\t' - Horizontal Tab Space 
 
     // 6) '\v' - Vertical Tab Space - This is not same as '\n'.
-    printf("This is Ashwin Kannan \v This is Ishani Saravanan \n"); 
+    printf("This is Ashwin Kannan \v This is Kannan \n"); 
 
     printf("Backslash : \\ \n"); // 7) '\\'- Backslash
 

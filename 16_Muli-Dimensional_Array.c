@@ -7,7 +7,7 @@ Multi-Dimensional Arrays :-
     
     The single dimensional arrays are great. However if you want to store the data as a tablular form, you need a 
 multi-dimensional arrays
-    A Multi-Dimensional array is basically an array of arrays.
+    A Multi-Dimensional array is basically an "array of arrays".
     Arrays can have N number of dimensions. The most common is 2D Array
 
 Two-Dimensional Arrays (2D Array) :-
@@ -35,14 +35,14 @@ void main()
     /*
     Explanation :-
     ---------------
-        The 1st dimension repesents the number opf rows [2], while the 2nd dimension represents the number of columns
-    [3]. The values are placed in row-order and can be visualized like this :-
+        The 1st dimension repesents the number of rows "[2]", while the 2nd dimension represents the number of columns
+    "[3]". The values are placed in row-order and can be visualized like this :-
     ---------------------------------------------------
     |        |  column 0 | column 1  |   column 2   |
     ---------------------------------------------------
-    | Row 0  |       1   |       4   |        2     |
+    | Row 0  |       1   |       5   |        2     |
     ----------------------------------------------------
-    | Row 1  |       3    |      6    |      8      |
+    | Row 1  |       3    |      9   |      12     |
     ---------------------------------------------------
 
     Accessing the elements of 2D Array :-
@@ -50,14 +50,14 @@ void main()
         To access the elements of a 2D Array, yu must specify the index number of both the rows and columns
     */
 
-    printf("matrix[0][2] = %d \n", matrix[0][2]); // Exmaple
+    printf("matrix[0][2] = %d \n", matrix[0][2]); // output : 2
 
     /*
     Change Elements :-
     --------------------
         To Change the value of the element, refer to the index number of the element in each of the dimensions
     */
-    matrix[1][2] = 22; // Example
+    matrix[1][2] = 22; // Change the value from '12' to '22'
     printf("matrix[1][2] = %d \n", matrix[1][2]);
 
     /*

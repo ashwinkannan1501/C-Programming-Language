@@ -7,6 +7,7 @@ void main()
     scanf("%d", &number); // '&' -> Reference Operator
 
     int *pointer_integer = &number;
+    
     printf("Number Value :- %d \n", number);
     printf("Address of %d :- %d \n", number, &number);
 

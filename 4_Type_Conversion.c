@@ -18,7 +18,7 @@ void main()
     /*
     (I) Implicit Conversion / Widening Casting :- 
     -----------------------------------------------
-        The implicit conversion / idening casting is done automatically by the compiler when you assign a value of
+        The implicit conversion / widening casting is done automatically by the compiler when you assign a value of
     one type to another type.
         It is used to convert a smaller datatype to larger datatype.
 
@@ -46,9 +46,10 @@ void main()
     */
 
     // Explicit Conversion / narrowing Casting
-    bool boolean = false;
-    printf("Boolean value = %d \n", boolean);
-
-    int integer = (int) boolean;
+    float floating_point =  123.569;
+    printf("Floating Point value = %.3f \n", floating_point);
+    int integer = (int) floating_point;
     printf("Integer value = %d \n", integer);
+
+    
 }

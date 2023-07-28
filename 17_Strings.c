@@ -53,7 +53,7 @@ void main()
         To change the values of a specific characters in a string, refer to it's index number and use ('').
         Since Strings is an array of characters, like arrays, strings are also mutable.
     */
-    greetings[0] = "J";
+    greetings[0] = 'J';
     printf("%s \n", greetings);
 
     /*
@@ -76,7 +76,7 @@ void main()
     /*
     String Functions :-
     ---------------------
-        C also have many useful functions, which an be used to perform certain operations on strings. To use them, 
+        C also have many useful functions, which can be used to perform certain operations on strings. To use them, 
     you must include / import the "<string.h>" header file in your program.
 
     -----------------------

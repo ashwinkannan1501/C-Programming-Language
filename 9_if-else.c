@@ -2,7 +2,7 @@
 
 void main()
 {
-    printf("--------------- If - Else Statements ------------------");
+    printf("--------------- If - Else Statements ------------------ \n");
 
     // Real World Example :-
     /* Write a C program to input marks of five subjects C, C++, Python, Java and JavaScript.
@@ -58,5 +58,13 @@ void main()
     // Ternary Operator
     printf("----------------- Ternary Operator / Short hand if statements -------------------------- \n");
     int age = 20;
+
+    /*
+    SYNTAX :-
+    ----------
+       ---------------------------------- 
+       | (condition) ? <True> : <False> |
+       ----------------------------------
+    */
     (age >= 18) ? printf("You are eligible to vote \n") : printf("You are not eligible to vote \n");
 }

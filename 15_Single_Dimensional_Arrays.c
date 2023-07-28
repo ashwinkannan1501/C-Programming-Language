@@ -46,10 +46,10 @@ void main()
     while (index < 2)
     {
         printf("index %hd : %hd \n", index, list[index]);
-        printf("Memory Location in integer: %d \n", &list[index]);
+        printf("Memory Location (integer format) : %d \n", &list[index]);
         // %p (Prints Memory Address) Format Specifier. To find the memory address that holds values of a variable, 
         // we use the %p format specifier, and it prints in hexadecimal form
-        printf("Memory Location in hexadecimal: %p \n", &list[index]); 
+        printf("Memory Location (hexadecimal format): %p \n", &list[index]); 
         index ++;
     }
 
@@ -68,6 +68,9 @@ void main()
     num[2] = 75;
     num[3] = 100;
     printf("%hd \n", num[2]);
+
+    short number[5] = {1, 2, 3, 4, 5}; // This also allowed
+    printf("%hd \n", number[0]);
 
     /*
     NOTE :-

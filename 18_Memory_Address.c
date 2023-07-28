@@ -22,22 +22,22 @@ void main()
     char string[7] = "Ashwin";
 
     printf("Integer Value :- %d \n", integer);
-    printf("Memory Address in Hexadecimal form :- %p \n", &integer);
-    printf("Memory Address in Integer form :- %d \n \n", &integer);
+    printf("Memory Address (Hexadecimal form) :- %p \n", &integer);
+    printf("Memory Address (Integer form) :- %d \n \n", &integer);
 
     printf("Floating Point Value :- %f \n", floating);
-    printf("Memory Address in Hexadecimal form :- %p \n", &floating);
-    printf("Memory Address in Integer form :- %d \n \n", &floating);
+    printf("Memory Address (Hexadecimal form) :- %p \n", &floating);
+    printf("Memory Address (Integer form) :- %d \n \n", &floating);
 
     printf("Boolean Value :- %d \n", boolean);
-    printf("Memory Address in Hexadecimal form :- %p \n", &boolean);
-    printf("Memory Address in Integer form :- %d \n \n", &boolean);
+    printf("Memory Address (Hexadecimal form) :- %p \n", &boolean);
+    printf("Memory Address (Integer form) :- %d \n \n", &boolean);
 
     printf("Character Value :- %c \n", character);
-    printf("Memory Address in Hexadecimal form :- %p \n", &character);
-    printf("Memory Address in Integer form :- %d \n \n", &character);
+    printf("Memory Address (Hexadecimal form) :- %p \n", &character);
+    printf("Memory Address (Integer form) :- %d \n \n", &character);
 
     printf("String Value :- %s \n", string);
-    printf("Memory Address in Hexadecimal form :- %p \n", &string);
-    printf("Memory Address in Integer form :- %d \n \n", &string);
+    printf("Memory Address (Hexadecimal form) :- %p \n", &string);
+    printf("Memory Address (Integer form) :- %d \n \n", &string);
 }

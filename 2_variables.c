@@ -161,8 +161,8 @@ void main()
     (b) Names must begin with a letter or an underscore(_)
     (c) Names are case-sensitive ('Var' and 'var' are different variables).
     (d) Names cannot contain whitespaces or special characters like '!', '#', '%', etc.,
-    (e) Reserved Keywords (such as 'int') can be variable names
-    (f)You can also assign the same value to multiple variables of the same type
+    (e) Reserved Keywords (such as 'int') can't be variable names
+    (f) You can also assign the same value to multiple variables of the same type
     */
 
     // Real World Example
