@@ -1,6 +1,5 @@
-// C Program BoilerPlate :- 
+// C Program BoilerPlate :-
 //-----------------------------
-
 
 // #include<stdio.h>
 // #define pi 3.14 // It acts as a constant or final variable
@@ -13,23 +12,27 @@
 
 // Write a c Program to find the area of the circle // Documentation Section
 
-#include<stdio.h> // Pre-processor Section
+#include <stdio.h> // Pre-processor Section
 
-#define pi 3.14 // Definition Section - It is a constant variable
+#define pi 3.14     // Definition Section - It is a constant variable
 float area, radius; // Global Declaration/variable - It can be accessed anywhere in the program.
-void addition(); // We want to declare the sub-function here if we want to define below the main function
+void addition();    // We want to declare the sub-function here if we want to define the sub-function below the main function
+void subtraction();
 
-void main() // Main Function
+int main() // Main Function
 {
-    
+
     printf("Enter the radius : ");
 
     float area, radius; // Declaration Part
     scanf("%f", &radius);
     area = pi * radius * radius; // Execution Part
-    printf("The area of the circle of the radius (%f) is : %f \n \n", radius, area);
+    printf("The area of the circle of the radius (%.1f) is : %.1f \n \n", radius, area);
 
-    addition(); // Calling the function
+    addition(); // Calling the addition() function
+    subtraction(); // Calling the subtraction() function
+
+    return 0;
 }
 
 // User Defined Function (or) Subprogram
@@ -37,37 +40,53 @@ void addition()
 {
     short first_number, second_number, addition_result;
 
+    printf("---------------------------------------------- Addition -----------------------------------------------\n");
     printf("Enter the first number : ");
     scanf("%hd", &first_number);
-    
+
     printf("Enter the second nuber : ");
     scanf("%hd", &second_number);
 
     addition_result = first_number + second_number;
 
-    printf("%hd + %hd = %hd", first_number, second_number, addition_result);
+    printf("%hd + %hd = %hd \n", first_number, second_number, addition_result);
 }
 
+void subtraction()
+{
+	short first_number, second_number, subtraction_result;
+
+	printf("-------------------------------------------- Subtraction ------------------------------------------\n");
+	printf("Enter the first number : ");
+	scanf("%hd", &first_number);
+
+	printf("Enter the second number : ");
+	scanf("%hd", & second_number);
+
+	subtraction_result = first_number - second_number;
+
+	printf("%hd - %hd = %hd \n", first_number, second_number, subtraction_result);
+}
 /*
-Comments :- 
+Comments :-
 --------------
-    The Comments can be used to explain the code and make it more readable. It is also be used to prevent code 
-execution when testing alternative codes. It is of 2 types. They are :- 
+    The Comments can be used to explain the code and make it more readable. It is also be used to prevent code
+execution when testing alternative codes. It is of 2 types. They are :-
         (a) Single Libe Comment
         (b) Multi-line Comment
 
-(a) Single Line Comment :- 
+(a) Single Line Comment :-
 -----------------------------
     It starts with2 forward slashes (//). Any text between (//) and the end of the line is ignored by the compiler
-(will not be executed). 
+(will not be executed).
     Example :-  //This is a Single Line Comment
 
-(b) Multi-Line Comment :- 
+(b) Multi-Line Comment :-
 ---------------------------
     As the name defines it is used to comment in multiple lines.
 */
- 
- //Example :- 
+
+// Example :-
 /*
 This
 is
