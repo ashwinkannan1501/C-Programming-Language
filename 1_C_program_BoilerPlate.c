@@ -3,6 +3,11 @@
 
  C Programming language is a general purpose , block structure , procedural, case-sensitive, free flow , portable and high-level programming langugae
 
+ C is considered as a Mid-Level Programming Language because it supports the features of both low-level and high-level languages
+ The C Program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine in-dependent (a feature of high level)
+ A Low-level language is specific to one machine, i.e., machine dependent. It is fast to run. But it is not easy to understand.
+ A High-Level language is not specific to one machine, i.e., machine independent. It is easy to understand.
+
  Structure of the C Program :-
  -------------------------------
  	-------------------------
@@ -45,11 +50,43 @@
 // }
 
 */
+
+/*
+(i) Documentation Section :- 
+    It is used to convey the message of the program.
+    It is of 2 types.
+    a. Single Line Comment  - Starts with "//"
+    b. Multi-line Comment - 
+
+(ii) Pre-processor Section :-
+    It directs the compiler to link a functions from the system library
+    These directives are processed by the pre-processor before the actual compilation
+    It is used to include header files, define macros and perform conditional compilation
+    It begins with the '#' symbol
+
+(iii) Definition Section :-
+    All the symbolic constants are defined in this section
+    Eg. #define PI 3.14
+
+(iv) Global Declaration :-
+    It contains variable declaration which can be accessed anywhere in the program
+
+(v) Function Section :-
+    It is necessary to have atleast one main function
+    It has 2 parts.
+        a. Declaration Part
+        b. Executable Part
+    The Declaration part declares all the variables used in the executable part
+
+(vi) User Defined Function :-
+    It contains the User defined functions which can be called by the main function
+ */
+
 // Write a c Program to find the area of the circle // Documentation Section
 
 #include <stdio.h> // Pre-processor Section
 
-#define pi 3.14     // Definition Section - It is a constant variable
+#define PI 3.14     // Definition Section - It is a constant variable
 float area, radius; // Global Declaration/variable - It can be accessed anywhere in the program.
 void addition();    // We want to declare the sub-function here if we want to define the sub-function below the main function
 void subtraction();
@@ -61,7 +98,7 @@ int main() // Main Function
 
     float area, radius; // Declaration Part
     scanf("%f", &radius);
-    area = pi * radius * radius; // Execution Part
+    area = PI * radius * radius; // Execution Part
     printf("The area of the circle of the radius (%.1f) is : %.1f \n \n", radius, area);
 
     addition(); // Calling the addition() function
