@@ -1,5 +1,39 @@
-// C Program BoilerPlate :-
+/** C Program BoilerPlate :- This program is basically the boilerplate (or) the basic structure of the C Program
 //-----------------------------
+
+ C Programming language is a general purpose , block structure , procedural, case-sensitive, free flow , portable and high-level programming langugae
+
+ Structure of the C Program :-
+ -------------------------------
+ 	-------------------------
+ 	| Documentation Section |   // This Section is optional but it is useful when we want to know what this lines of codes in the file does
+	-------------------------
+
+	------------------------
+	| Preprocessor Section |   // It is mandotary
+	------------------------
+
+	--------------------
+	| Defition Section |    // It is Optional
+	--------------------
+
+	----------------------
+	| Global Declaration |  // It is optional but often usable
+	----------------------
+
+	Function Section     // Main Function (mandotary) 
+
+		main (){
+			Declaration Part;
+			Executable Part;
+		}
+
+	User-Defined Function    // Optional but is used to create a separate function has it's own tasks 
+		<return_type> <function_name> (<Parameter n>){
+			Block of codes ;
+		}
+
+
 
 // #include<stdio.h>
 // #define pi 3.14 // It acts as a constant or final variable
@@ -10,6 +44,7 @@
 //     printf("a = %d", a);
 // }
 
+*/
 // Write a c Program to find the area of the circle // Documentation Section
 
 #include <stdio.h> // Pre-processor Section
