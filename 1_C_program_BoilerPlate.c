@@ -84,16 +84,17 @@
 
 // Write a c Program to find the area of the circle // Documentation Section
 
-#include <stdio.h> // Pre-processor Section
+#include <stdio.h> // Pre-processor Section - the program includes the standard input/output due to pre-processor directives
 
 #define PI 3.14     // Definition Section - It is a constant variable
 float area, radius; // Global Declaration/variable - It can be accessed anywhere in the program.
 void addition();    // We want to declare the sub-function here if we want to define the sub-function below the main function
 void subtraction();
 
-int main() // Main Function
+int main() // Main Function - It is the entry point of the C Program. The program starts executing from the beginning of the main function.
 {
 
+    printf("Hello C Programming Language"); // The 'printf()' function used to print the contents to the console 
     printf("Enter the radius : ");
 
     float area, radius; // Declaration Part
@@ -104,7 +105,7 @@ int main() // Main Function
     addition(); // Calling the addition() function
     subtraction(); // Calling the subtraction() function
 
-    return 0;
+    return 0; // finally ending the main function. After compilation and execution, this program will quit with the status code 0
 }
 
 // User Defined Function (or) Subprogram

@@ -1,0 +1,23 @@
+??? from here until ???END lines may have been inserted/deleted
+Compilation Process in C :- 
+-----------------------------
+
+What is Compilation ? :-
+-------------------------
+	The Compilation is the process of converting the source code into the object code. 
+	It gets done with the help of the compiler.
+	First, The compiler checks the source code for the syntactical or structural error, and if the source code is error-free, then it generates the object code.
+
+	The C Compilation process converts the source code taken as input into the object code (or) machine code
+
+	The Pre-processor takes the source code as input, and it removes all the comments from the soure code.
+	The Pre-processor takes the pre-processor directives and interprets it.
+	For Example, if <stdio.h> directive is available in the program means, then the pre-processor interprets the directive and replace this directive with the content of 'stdio.h' file
+
+
+        The Compilation process can be divided into 4 steps.
+        (i) Pre-Processing
+        (ii) Compiling
+        (iii) Assembling and
+        (iv) Linking
+       
