@@ -1,0 +1,51 @@
+Introduction to C Language :- 
+-------------------------------
+    C Language Tutorial with programming approach for beginners and professionals , helps you to understand the C Language tutorial Easily
+    
+    The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers kernels , etc 
+
+    The C Programming is considered as the base for other programming languages, that is why it is known as mother language
+
+    It can be defined by the following ways:
+(i) Mother Language
+(ii) System Programming Langugage
+(iii) Procedure-Oriented Programming Langugage
+(iv) Structured Programming Language
+(v) Mid-level Programming Language
+
+(i) C as a Mother Programming Language :-
+--------------------------------------------
+	The C Language is considered as the mother language of all moderan programming langugages because most of the compilers, JVM's, Kernels, etc., are written in C langugage and most of the programming languages follows C syntax , like C++, C#, Java, etc.,
+	
+	It Provides the core concepts like arrays, strings, functions, file handling, etc., that are being used in many langugages, like C++, C#, Java, Python, etc.,
+
+(ii) C as a System Programming Language :- 
+---------------------------------------------
+	A System Programming Language is used to create a system software
+	C Language is a system programming language because it can be used to do low-level programming (for example , driver and kernel)
+	It is generally used to create hardware devices, OS, drivers, kernels, etc., 
+	For Example, Linux Kernels are written in C
+	It can't be used for internet programming like, Java, .NET, PHP, etc.,
+
+(iii) C as a Procedural Language :- 
+-------------------------------------
+	A Procedure is known as function, method, routine, sub-routine, etc.,
+	A Procedural language specifies a series of steps for a program to solve the problem.
+	A Procesural language breaks the program into functions, data structures, etc.,
+	C is a Procedural language. In C, variables and function prototypes must be declared before being used
+
+(iv) C as a Structured Programming Language :- 
+-------------------------------------------------	
+	A Structured Programming Language is a subset of procedural language. 
+	Structure means to break a program into parts or blocks, so that it may be easy to understand.
+	In the C Language, we break the program into parts using functions. It makes the program easier to understand and modify.
+
+(v) C as a mid-level Programming Language :-
+----------------------------------------------
+	C is considered as a mid-level programming language because it supports the feature of both low-level and high-level languages.
+	C Program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine in-dependent (a feature of high-level).
+	
+
+Note :- A Low-Level language is specific to one machine i.e machine dependent
+	A High-level language is not specific to one machine. i.e machine independent 	
+
