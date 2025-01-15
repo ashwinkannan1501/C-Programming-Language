@@ -1,0 +1,41 @@
+Features of C Programming Language :-
+--------------------------------------
+	C is a widely used language.
+	It Provides many features that are given below :
+(1) Simple
+(2) Machine Independent (or) Portable
+(3) Mid-level Programming Language
+(4) Structured Programming Language 
+(5) Rich Library
+(6) Memory Management
+(7) Fast Speed
+(8) Pointers
+(9) Recursion
+(10) Extensible
+
+Explanation from Point 5 :-
+
+(5) Rich Library :- 
+---------------------
+	C Provides a lot of in-built functions that makes the development fast.
+
+(6) Memory Management :- 
+--------------------------
+	It supports the features of dynamic memory allocation. In C Language, we can free the allocated memory at any time by calling the "free()" function
+
+(7) Speed :- 
+-------------
+	The Compilation and Execution time of C Language is fast since there are lesser in-built functions and hence there are lesser overhead
+
+(8) Pointers :- 
+----------------
+	C Provides the features of pointers. We can directly interact with the memory using pointers. We can use the pointers for memory, structures, functions, arrays, etc.,
+
+(9) Recursion :- 
+------------------
+	In C, we can call the function within the function. It provides the code reusability for every function. Recursion enables us to use the approach of backtracking.
+
+(10) Extensible :- 
+-------------------
+	C lannguage is extensible because it can adapt new features.
+	
