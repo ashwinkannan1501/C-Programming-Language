@@ -1,35 +1,43 @@
 /*
 Data Types in C :-
 --------------------
-    A Variable in C must be a specified 'datatype' and you must use a 'format specifier' inside the 'printf()' 
-function to display it.
+	A data type specifies the type of the data that a variable can store such as integer, floating point, character , etc.,
 
-    The datatype specifies the size and type of information the variable will store. It refers to the type and the 
-size of data associated with variables and functions.
-
-    In the C programming language, data types constitute the semantics and characteristics of storage of data 
-elements.
-
-    They are expressed in the language syntax in form of declarations for memory locations or variables. 
-    Data types also determine the types of operations or methods of processing of data elements.
-
-    C data types are defined as the data storage format that a variable can store a data to perform a specific 
-operation.
-
-    Data types are used to define a variable before to use in a program.
-
+Categories :-
+-------------	
+	There are 4 different categories of data types in C.
+	(I) Basic Data Types : int, float, double, char, boolean
+	(II) Derived Data Types : array, pointer, structure, Union
+	(III) Enumeration Data Types : enum
+	(IV) Void Data Type : void
 */
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
 #include <float.h>
+#include <string.h>
+
+struct Person 
+{
+	
+	char first_name[50];
+	char last_name[50];
+	short age;
+	char designation[200];
+	char company[50];
+};
 
 void main()
 {
     printf("---------------------- Data Types ---------------------------\n");
 
     /*
-    Integer DataType :- 
+     (I) Basic Data Types :-
+     --------------------------
+     	The Basic Data Types are integer, float and character based data types. 
+	C language supports both signed and unsigned literals
+
+    (i) Integer DataType :- 
     ---------------------
         A integer is a whole number that can be a positive, negative, or zero. It is classified into the following types:-
 
@@ -57,6 +65,7 @@ void main()
 
 
    // 1) Integer Data Type :-
+   printf("-------------------------------------- Integer Data Type ------------------------------------ \n");
     short short_data_type = -32768;
     unsigned short unsigned_short_data_type = 655;
     int int_data_type = 25639785;
@@ -67,16 +76,31 @@ void main()
     unsigned long long unsigned_long_long_data_type = 45698723;
 
     printf("The value of short data type = %hd \n", short_data_type);
+    printf("The size of short data type = %ld bytes \n", sizeof short_data_type);
+
     printf("The value of Unsigned Short Data Type = %hu \n", unsigned_short_data_type);
+    printf("The size of Unsigned Short Data Type = %lu  bytes \n ", sizeof unsigned_short_data_type);
+
     printf("The value of int data type = %d \n", int_data_type);
+    printf("The size of Integer Data Type = %lu bytes \n ", sizeof int_data_type);
+
     printf("The value of Unsigned Int data type = %u \n", unsigned_int_data_type);
+    printf("The size of Unsigned Integer Data Type = %lu  bytes \n ", sizeof unsigned_int_data_type);
+
     printf("The value of long data type = %ld \n", long_data_type);
+    printf("The size of long Data Type = %lu bytes \n ", sizeof long_data_type);
+
     printf("The value of Usigned Long Data Type = %lu \n", unsigned_long_data_type);
+    printf("The size of Unsigned Long Data Type = %lu bytes \n ", sizeof unsigned_long_data_type);
+
     printf("The value of long long int data type = %lld \n", long_long_int_data_type);
+    printf("The size of Long Long Int Data Type = %lu bytes \n ", sizeof long_long_int_data_type);
+
     printf("The value of unsigned long long int data type = %llu \n", unsigned_long_long_data_type);
+    printf("The size of Unsigned long long Data Type = %lu bytes \n ", sizeof unsigned_long_long_data_type);
 
     /*
-    Character Datatype :- 
+    2) Character Datatype :- 
     -----------------------
         The character datatype holds only one character (letters, numbers, etc.,) of data. It must be enclosed with
     single quotes (''). Ex :- 'A', '4', '$'. It is of 2 types :-
@@ -91,7 +115,8 @@ void main()
 
     */
 
-    // 2) Character Data Type
+    // Character Data Type
+    printf("--------------------------------------- Character Data Type ----------------------------------- \n");
     char char_data_type = '4';
     unsigned char unsigned_char_data_type = 'P';
     printf("The Value of char data type = %c \n", char_data_type);
@@ -99,7 +124,9 @@ void main()
 
 
     /*
-    Floating Point Data Type :- It is of 3 types :-
+     3) Floating Point Data Type :- 
+     ---------------------------------
+     	It is of 3 types :-
 
     --------------------------------------------------------------------------
     | Data Type   	Memory 	    Range 	                    Format Specifier
@@ -113,45 +140,107 @@ void main()
     */
 
     // 3) Float Data Type
+    printf("---------------------- Float Data Type ---------------------------- \n");
     float float_data_type = 25.3695;
     double double_data_type = -5263.752639;
     printf("The value of float data type = %f \n", float_data_type);
+    printf("The size of float data type : %ld \n", sizeof float_data_type);
+
     printf("The value of double data type = %lf \n", double_data_type);
+    printf("The size of double data type : %f \n", double_data_type);
+
+    
+    /*
+	
+    (II) Derived Data Type :- 
+    -----------------------------
+    	The Derived data types includes arrays, pointers , structures and Unions.
+	These data types are useful to handle the heterogeneous data's, directly modify the memory and build complicated data structures
+
+    (i) Arrays :-
+  ----------------
+	An array, which is a derived data type, lets you to store a sequence of fixed size elements of same type.
+  	It provides a mechanism for joining multiple targets of the same data under the same name
+	
+	SYNTAX :-
+	----------
+	-----------------------------------------------------------
+	| datatype array_name[n] = {value1, value2, ..., valuen}; |
+	-----------------------------------------------------------
+				0    1	  2     3   -> index	
+	For Understanding  :- ['c', '$', 'A', '45'] -> Array items
+
+
+	The index is used to accss an element of array	
+	The size of an array is fixed at declaration time, and cannot be changed during the execution time
+	The array components are placed in adjacent memory locations
+     */
+
+    printf("------------------ Array ---------------------------- \n");
+
+    char vowels[5]; // Declares an integer array with the size of an element
+    // Assigning values to the array elements
+    vowels[0] = 'A';
+    vowels[1] = 'E';
+    vowels[2] = 'I';
+    vowels[3] = 'O';
+    vowels[4] = 'U';
+
+    //Display the values stored in array
+    printf("The elements stored in the array is : ");
+    for (int index = 0; index < 5; index += 1)
+    {
+	printf("%c, ", vowels[index]);
+    }
+    printf("\n");
 
     /*
-    Boolean Data Type :-
-    ---------------------
-        The boolean in represented as 'bool' in C. We must import/include the 'stdbool' header file to use the boolean data type. 
+	
+     (ii) Pointers : 
+     -----------------
+     	A Pointer is a derived data type that keeps track of another data type's memory address 
+	When a pointer is declared, the data type it refers to it's stated first, and then the variable name is preceeded by an '*' symbol.
+	The pointers are commonly used in function pointers , data structures, and dynamic memory allocation
+	*/
 
-        It only contains one value either 'true'/'false'. It is of 1 bit. There is no format specifiers for boolean
-    data type. We can print it's values by using some of the existing format specifiers like '%d', '%i', '%s', etc.,
-    */
+    printf("-------------- Pointers ---------------- \n");
+    double PI = 3.14153678;
+    double *pointer = &PI;
 
-    // 4) Boolean Data Type
-    bool boolean_data_type = true;
-    printf("Boolean data type = %d \n", boolean_data_type);
-    if (boolean_data_type == true)
-    {
-        printf("Boolean data type = true  \n");
-    }
+    printf("PI = %lf \n", PI);
+    printf("size of PI Variable : %ld \n", sizeof PI);
+    printf("Pointer Variable : %p \n", pointer);
+    printf("The Value of the Pointer Variable which points to it ? is : %f \n", *pointer);
 
-    printf("----------------------------------------------------------------------------------- \n");
 
-    printf(" Printing the size(in bytes), range of the each data type :- \n");
-    // Integer
-    printf("\nShort data type | %u Bytes | %d To %d", sizeof(short int), SHRT_MIN, SHRT_MAX);
-    printf("\nunsigned short data type | %u Bytes | 0 To %d", sizeof(unsigned short int), USHRT_MAX);
-    printf("\nunsigned int data type | %u Bytes | 0 To %u", sizeof(unsigned int), UINT_MAX);
-    printf("\nint data type | %u Bytes | %d To %d", sizeof(int), INT_MIN, INT_MAX);
-    printf("\nlong data type | %u Bytes | %ld To %ld", sizeof(long int), LONG_MIN, LONG_MAX);
-    printf("\nunsigned long data type | %u Bytes | 0 To %u", sizeof(unsigned long int), ULONG_MAX);
-    printf("\nlong long data type | %u Bytes | %lld To %lld", sizeof(long long int), LLONG_MIN, LLONG_MAX);
-    printf("\nunsigned long long data type | %u Bytes | 0 To %llu \n\n", sizeof(unsigned long long int), ULLONG_MAX);
-    // Character
-    printf("\nCharacter data type | %u Bytes | %d To %d", sizeof(char), CHAR_MIN, CHAR_MAX);
-    printf("\nCharacter data type | %u Bytes | 0 To %d\n\n", sizeof(unsigned char), UCHAR_MAX);
-    // Float
-    printf("\nFloat data type | %u Bytes", sizeof(float));
-    printf("\nDouble data type | %u Bytes", sizeof(double));
-    printf("\nLong Double data type | %u Bytes\n\n", sizeof(long double));
+    printf("-------------- Structures ----------------- \n");
+
+    struct Person first_person, second_person;
+
+    strcpy(first_person.first_name, "Ashwin"); 
+    strcpy(first_person.last_name, "Kannan");
+    first_person.age = 24;
+    strcpy(first_person.designation, "Devops Engineer");
+    strcpy(first_person.company, "Jio");
+
+    strcpy(second_person.first_name, "Kannan");
+    strcpy(second_person.last_name, "Arumugam");
+    second_person.age = 45;
+    strcpy(second_person.designation, "Clothing Business");
+    strcpy(second_person.company, "Ashwin Textiles");
+
+    // Accessing the structure members
+    printf("First Name : %s \n", first_person.first_name);
+    printf("Last Name : %s \n", first_person.last_name);
+    printf("Age : %d \n", first_person.age);
+    printf("Designation : %s \n", first_person.designation);
+    printf("Comapny : %s \n", first_person.company);
+    printf("\n");
+
+    printf("First Name : %s \n", second_person.first_name);
+    printf("Last Name : %s \n", second_person.last_name);
+    printf("Age : %d \n", second_person.age);
+    printf("Designation : %s \n", second_person.designation);
+    printf("Comapny : %s \n", second_person.company);
+
 }

@@ -16,7 +16,7 @@ Declaring / Creating Variables :-
         -------------------------------
         | type variable_name = value; |
         -------------------------------
-    where 'type' is one of the C's datatype, sucha s 'int'.
+    where 'type' is one of the C's datatype, such as 'int'.
           'variable_name' is the name of the variable.
           The '=' is used to assign a value to the variable.
 
@@ -38,7 +38,7 @@ void global_variable();
 void static_variable();
 
 int global_variables = 20; // Global Variable
-extern short external_variable; // External Variable
+//extern short external_variable; // External Variable
 
 void main()
 {
@@ -75,9 +75,9 @@ void main()
     ----------------------
         The format specifiers are used together with the 'printf()' function to tell the compiler what type of data,
     the variable is storing. It is basically the placeholder for the variable value.
-        For Exmaple, to output the value of an 'int' varable, you must use the format specifier '%d'/'%i' surrounded
+        For Exmaple, to output the value of an 'int' varable, you must use the format specifier '%d' (or) '%i' surrounded
     by double quotes (""), inside the 'printf()' function.
-    */
+    */ 
 
    // creating variables
    printf("Format Specifiers :- \n");
@@ -135,6 +135,26 @@ void main()
 
     printf("-----------------------------------------------------------------------\n");
 
+
+    // Swapping of 2 variables
+    short number_1 = 10;
+    short number_2 = 20;
+    short temp; // Creates a temporary variable
+
+    printf("Before Swapping \n");
+    printf("Number 1 : %hd \n", number_1);
+    printf("Number 2 : %hd \n", number_2);
+
+    // Swapping Procedure;
+    temp = number_2; // Firstly assigning the num2 value to temp variable
+    number_2 = number_1; // Secondly assigning the num1 value to num2 variable
+    number_1 = temp; // Lastly assigning the temp value to num1 variable 
+
+    printf("After Swapping \n");
+    printf("Number 1 : %hd \n", number_1);
+    printf("Number 2 : %hd \n\n", number_2);
+
+    printf("------------------------------------------------------------------------ \n\n");
 
     /*
     Declare Multiple Variables :- 
@@ -203,6 +223,8 @@ void main()
     global_variable();
     static_variable();
     static_variable();
+    static_variable(); 
+    static_variable();
     static_variable();
 
 /*
@@ -255,7 +277,7 @@ Limitation and Best Practices :-
     Documentation : Clearly document the process, and use of external variables to maintain code readability.
 
  */
-    printf("External Variable (using extern keyword) is : %hd\n", external_variable);
+    //printf("External Variable (using extern keyword) is : %hd\n", external_variable);
 }
 
 void global_variable()
@@ -268,7 +290,7 @@ void global_variable()
 Static Variables :- 
 ----------------------
     A Variable that is declared with the 'static' keyword is called static variable.
-    It retains the value between the multiple function calls 
+    It retains the value between the multiple function calls (Important point for static variable) 
  */
 void static_variable()
 {
