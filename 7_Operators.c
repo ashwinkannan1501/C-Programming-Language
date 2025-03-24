@@ -171,16 +171,16 @@ void main()
     printf("Enter the second number : ");
     scanf("%hd", &second_num);
 
-    first_num += second_num;
-    first_num -= second_num;
-    first_num *= second_num;
-    first_num /= second_num;
-    first_num %= second_num;
-    first_num &= second_num;
-    first_num |= second_num;
-    first_num ^= second_num;
-    first_num <<= second_num;
-    first_num >>= second_num;
+    first_num += second_num; // Equivalent to "first_num = first_num + second_num"
+    first_num -= second_num;// Equivalent to "first_num = first_num - second_num"
+    first_num *= second_num;// Equivalent to "first_num = first_num * second_num"
+    first_num /= second_num;// Equivalent to "first_num = first_num / second_num"
+    first_num %= second_num;// Equivalent to "first_num = first_num % second_num"
+    first_num &= second_num;// Equivalent to "first_num = first_num & second_num"
+    first_num |= second_num;// Equivalent to "first_num = first_num | second_num"
+    first_num ^= second_num;// Equivalent to "first_num = first_num ^ second_num"
+    first_num <<= second_num;// Equivalent to "first_num = first_num << second_num"
+    first_num >>= second_num;// Equivalent to "first_num = first_num >> second_num"
 
     printf("The Value of 1st number = %hd \n", first_num);
     printf("The value of 2nd number = %hd \n", second_num);
@@ -195,4 +195,21 @@ void main()
     */
     printf("---------------- sizeof() operator ------------------- \n");
     printf("%lu \n", sizeof(short)); // output :- 2
+
+    /*
+(vii) Ternary / Conditional Operators :-
+---------------------------------------------
+    It is also known as the simple if statement
+    Problem : Check if you are eligible to vote or not using ternary operator
+    */
+   unsigned short age;
+   printf("Age : ");
+   scanf("%hd", &age);
+   printf("%s \n", (age >= 18 ? "You are eligibile to vote" : "You are not eligible to vote"));
+   /*
+   Explanation :- 
+   ----------------
+   SYNTAX :- (condition ? statement_1 : statement_2)
+   if condition satiesfies, statement 1 will get executed otherwise statement 2 will get executed 
+   */
 }

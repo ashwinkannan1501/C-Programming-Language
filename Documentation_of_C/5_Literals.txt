@@ -1,0 +1,8 @@
+Literals :- 
+------------
+    The Literals are the constant values assigned to the constant variables 
+    There are 4 types of Literals. They are :-
+    i. Integer Literals
+    ii. Float Literals 
+    iii. Character Literals
+    iv. String Literals

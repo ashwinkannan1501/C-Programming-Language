@@ -47,6 +47,6 @@ void main()
 
     printf("Question Mark :- \? \n"); // 10) '\?' - Question Mark
 
-    printf("Null:- \0"); // 11) '\0' - Null Character
+    //printf("Null:- \0"); // 11) '\0' - Null Character
         
 }

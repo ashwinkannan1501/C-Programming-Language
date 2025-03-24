@@ -1,3 +1,10 @@
+/*
+Format Specifiers :- 
+---------------------
+    The format specifier is a string used in the formatted input and output
+    The format string always starts with "%" character
+*/
+
 #include <stdio.h>
 
 void main()
@@ -29,6 +36,7 @@ void main()
     printf("Unsigned Long Long Integer Format Specifier : %%llu :- %llu \n", unsigned_long_long_integer_format_specifer);
     printf("Floating Point Format Specifier : %%f :- %f \n", floating_point_format_specifier);
     printf("Double Format Specifier : %%lf :- %lf \n", double_format_specifier);
+    //printf("g format specifier : %%g :- %g \n", long_double_format_specifier);
     printf("Long Double Format Specifier : %%Lf :- %Lf \n", long_double_format_specifier);
     printf("Single Character Format Specifier : %%c :- %c \n", character_format_specifier);
     printf("String Format Specifer : %%s :- %s \n", string_format_specifier);

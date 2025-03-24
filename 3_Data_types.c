@@ -17,6 +17,7 @@ Categories :-
 #include <float.h>
 #include <string.h>
 
+// Declaring a structure representing a Person
 struct Person 
 {
 	
@@ -25,6 +26,22 @@ struct Person
 	short age;
 	char designation[200];
 	char company[50];
+};
+
+// Declaring a union data type represeing a 'Person'
+union People
+{
+	char first_name[50];
+	char last_name[50];
+	short age;
+};
+
+// Define an enumeration
+enum TrafficLights 
+{
+	RED,
+	YELLOW,
+	GREEN
 };
 
 void main()
@@ -212,11 +229,26 @@ void main()
     printf("Pointer Variable : %p \n", pointer);
     printf("The Value of the Pointer Variable which points to it ? is : %f \n", *pointer);
 
+    /*
+     Structure Data Type :-
+     -----------------------
+     	A Structure is a derived data type that enables the creation of composite data types by allowing the grouping of many data types under a single name
+	It gives you the ability to create you own unique data structures by fusing together variables of various sorts.
+	1) A Structure's members or fields are used to refer to each variable within it.
+	2) Any data type, including different structures, can be a member of structure.
+	3) A Structure's member can be accessed by dot ('.') operator
+    */	
 
     printf("-------------- Structures ----------------- \n");
 
+    // Declaring a variable of type 'struct', called 'Person'
     struct Person first_person, second_person;
+    // Explanation : 
+    // 'struct'  - keyword for defining that is a structure data type's variable.
+    // 'Person' - name of the structure , which needs to match the Strcuture details which is declared outside of the main function
+    // 'first_person , second_person' - Member or fields of 'Person' structure
 
+    // Assigning values to structure members
     strcpy(first_person.first_name, "Ashwin"); 
     strcpy(first_person.last_name, "Kannan");
     first_person.age = 24;
@@ -243,4 +275,90 @@ void main()
     printf("Designation : %s \n", second_person.designation);
     printf("Comapny : %s \n", second_person.company);
 
+    // To-know that the structure data type carries the same memory location across all key's or not? -  Ans : No
+    printf("Memory of First Person's first name : %p \n", &first_person.first_name);
+    printf("Memory of First Person's last name : %p \n\n", &first_person.last_name);
+    printf("Memory of Second Person's first name : %p \n", &second_person.first_name);
+    printf("Memory of Second Person's last name : %p \n\n", &second_person.last_name);
+
+    /*
+     Unions :-
+     -----------
+     	A Unions, which is a derived datat type, that enables you to store various data types in same memory address.
+	In contrast to structure data type, where each member has separate memory space, whereas in union data type, members of a union, all share a single memory space.
+	A value can only be held by one member of a union at any given moment
+	When you need to represent many data types interchangeably, union data types comes in handy
+	The members of union data type can be accessed by '.' operator.
+     */
+   printf("---------------- Unions ------------------------ \n "); 
+    union People person_1, person_2;
+
+    strcpy(person_1.first_name, "Ashwin");
+    strcpy(person_1.last_name, "Kannan");
+    person_1.age = 24;
+
+    
+    strcpy(person_2.first_name, "Kannan"); 
+    strcpy(person_2.last_name, "Arumugam");
+    person_2.age = 45;
+
+
+    printf("First Name : %s \n", person_1.first_name);
+    printf("Last Name : %s \n", person_1.last_name);
+    printf("Age : %hd \n", person_1.age);
+
+    printf("First Name : %s \n", person_2.first_name);
+    printf("Last Name : %s \n", person_2.last_name);
+    printf("Age : %hd \n", person_2.age);
+
+    printf("Memory of First Person's first name : %p \n", &person_1.first_name);
+    printf("Memory of First Person's last name : %p \n", &person_1.last_name);
+    printf("Memory of Second Person's first name : %p \n", &person_2.first_name);
+    printf("Memory of Second Person's last name : %p \n", &person_2.last_name);
+
+    /*
+     Reason Why First Name and Last name is not printing on the screen :-
+
+     Since the union data type, shares the same memory all of it's fields on their respective variables, the latest field will be replaced of it's first one. In order to overcome this , you can use the following below to print all of the output value. But remember , it will overwrite everything.
+     */
+
+   strcpy(person_1.first_name, "Ashwin");
+   printf("First Name : %s \n", person_1.first_name);
+   strcpy(person_1.last_name, "Kannan");
+   printf("Last Name : %s \n", person_1.last_name);
+
+   printf("First Name : %s \n", person_1.first_name);
+
+
+   /*
+     enum data type :- 
+     ---------------------
+     	enum is called enumeration, which generally means "a list of items counted one by one".
+	enum is a derived data type, which is a set of names constants or enumerators, that represents a collection of connected values
+    */
+
+   printf("-------------------------- enum --------------------------- \n");
+   enum TrafficLights signal = YELLOW;
+
+  printf("Traffice Light Signal Index : %d \n", signal);
+ if (signal == RED)
+ {
+	 printf("The Vehicles must STOP. \n");
+ }
+ else if (signal == YELLOW)
+ {
+	 printf("The Vehicles get ready to go. \n");
+ }
+ else if (signal == GREEN) 
+ {
+	 printf("The Vehicles can GO! \n");
+ }
+
+
+ /*
+   (IV) void data type :- 
+   ------------------------
+   	A void data type in C language is used to denote a lack of a particular type.
+	Function return types, function parameters and pointers are three situation where it's frequently utilized.
+  */
 }
