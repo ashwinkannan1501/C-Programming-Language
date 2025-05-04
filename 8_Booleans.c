@@ -6,18 +6,18 @@ Booleans :-
         (B) ON / OFF
         (C) TRUE / FALSE
 
-    For this, C has a 'bool' datatype, which is known as 'booleans'. Booleans represents values that are either 
+    For this, C has a 'bool' datatype, which is known as 'booleans'. Booleans represents values that are either
 'true'/'false'.
 
-Boolean Variables :- 
+Boolean Variables :-
 ----------------------
-    In C, the 'bool' datatype is not a built-in datatype like 'int' (or) 'char'. You must import the 
+    In C, the 'bool' datatype is not a built-in datatype like 'int' (or) 'char'. You must import the
 '#include<stdbool.h>' header file to use it.
 
     A boolean variable is declared with the 'bool' keyword and can only take the values either 'true' / 'false'
 */
 #include <stdio.h>
-#include <stdbool.h>
+#include <stdbool.h> // Pre-processor to access the boolean values
 
 void main()
 {
@@ -35,8 +35,15 @@ void main()
 
     // However it is more common to return a boolean value by comparing values and variables
 
+    // Boolean Array :-
+    bool boolean_array[3] = {false, true, true} ;
+    printf("boolean Array is : ");
+    for (int index=0; index < 3; index += 1)
+    {
+        printf("%d", boolean_array[index]);
+    }
     // Real Word example
-    printf("----------------- Real World Example -------------------- \n");
+    printf("\n----------------- Real World Example -------------------- \n");
     // Check if the person is eligible to vote or not
     short age, gender;
     char name[20];
@@ -74,9 +81,8 @@ void main()
             printf("Since Your age is below 18. You are not able to vote Ms/Mrs.%s", name);
         }
         break;
-    
+
     default:
         printf("Incorrect Option. Please Choose either '1' or '2'");
     }
-    
 }
