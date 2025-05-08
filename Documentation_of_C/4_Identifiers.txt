@@ -1,0 +1,4 @@
+Identifiers :-
+-----------------
+    The Identifiers are nothing but the names , which includes function names, parameter names, variable_names
+    The Starting letters of an identifiers should be an alphabet (or) underscore

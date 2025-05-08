@@ -82,29 +82,57 @@
     It contains the User defined functions which can be called by the main function
  */
 
+/*
+printf() and scanf() functions in C :- 
+------------------------------------------
+The 'prinf()' and 'scanf()' functions are used for input and ouput in C language. 
+Both functions are in-built library functions, defined in 'stdio.h' (header file)
+
+(i) printf() function :- 
+-------------------------
+	The printf() function is used for output the given statement to the console window.
+Syntax :- 
+	---------------------------------------------
+	| printf("format_string", [argument_list]); |
+	---------------------------------------------
+
+(ii) scanf() function :-
+---------------------------
+	The scanf() function is used for reads the input data from the console which is entered by the user
+
+SYNTAX :- 
+-----------
+	-------------------------------------------
+	| scanf("format_string", &argument_list); |
+	-------------------------------------------
+Description :- The '&' symbol is used for accessing the memory
+
+ */
+
 // Write a c Program to find the area of the circle // Documentation Section
 
-#include <stdio.h> // Pre-processor Section
+#include <stdio.h> // Pre-processor Section - the program includes the standard input/output due to pre-processor directives
 
 #define PI 3.14     // Definition Section - It is a constant variable
 float area, radius; // Global Declaration/variable - It can be accessed anywhere in the program.
 void addition();    // We want to declare the sub-function here if we want to define the sub-function below the main function
 void subtraction();
 
-int main() // Main Function
+int main() // Main Function - It is the entry point of the C Program. The program starts executing from the beginning of the main function.
 {
 
+    printf("Hello C Programming Language \n"); // The 'printf()' function used to print the contents to the console 
     printf("Enter the radius : ");
 
     float area, radius; // Declaration Part
-    scanf("%f", &radius);
+    scanf("%f", &radius); // The 'scanf()' function is used to get the input from the user
     area = PI * radius * radius; // Execution Part
     printf("The area of the circle of the radius (%.1f) is : %.1f \n \n", radius, area);
 
     addition(); // Calling the addition() function
     subtraction(); // Calling the subtraction() function
 
-    return 0;
+    return 0; // finally ending the main function. After compilation and execution, this program will quit with the status code 0
 }
 
 // User Defined Function (or) Subprogram
@@ -116,7 +144,7 @@ void addition()
     printf("Enter the first number : ");
     scanf("%hd", &first_number);
 
-    printf("Enter the second nuber : ");
+    printf("Enter the second number : ");
     scanf("%hd", &second_number);
 
     addition_result = first_number + second_number;

@@ -1,0 +1,14 @@
+Tokens :- 
+-----------
+    The Tokens in C are the most important building blocks (or) basic element to be used in C Program.
+    We can't create a C Program without using tokens.
+
+Classifications of Tokens :-
+------------------------------
+    There are 6 classifications / types of tokens . They are 
+    i. Keywords
+    ii. Idendifiers
+    iii. Constants 
+    iv. Strings (Data Types)
+    v. Symbols - [], (), {}, ',', #, *, ~, .
+        ~ - The ~ character is used as a destructor to free memory 
